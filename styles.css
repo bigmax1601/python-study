@@ -1,0 +1,45 @@
+
+h1 {
+font: italic bold 30px arial, sans-serif;
+color: #990000;
+background-color: #FC9804;
+}
+
+h2 {
+font: italic bold 30px arial, sans-serif;
+color: #009900;
+background: #FC9804;
+}
+
+td {
+color:#0000ff;
+background-color:#afaf80;
+}
+
+.evenrows td {
+background:#afaf80;
+}
+
+.oddrows td {
+background:#efefa0;
+}
+
+th {
+color:#ffff00;
+background-color:#0000ff;
+font-weight: bold;
+}
+
+a:link {
+color: blue;
+}
+
+a:visited {
+color:red;
+}
+
+a:hover {
+color: orange;
+font-style: italic;
+}
+
