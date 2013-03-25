@@ -1,7 +1,10 @@
 # views
-from django.http import HttpResponse
+from django.shortcuts import render
 
-def index (request):
-  return HttpResponse('Hello, world!')
+def index_view(request):
+  return render(request, "index.html")
+
+def results_view(request):
+  return render(request, "results.html")
   
 

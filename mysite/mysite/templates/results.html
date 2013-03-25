@@ -1,11 +1,17 @@
-<!DOCTYPE html>
-<html lang="ru">
+{% extends "base.html" %}
+    
+{% block title_content %}  
+    Таблица результатов
+{% endblock title_content %}     
+
+{% block results_menu_class %}class="active"{% endblock %}
+
+{% block main_content %}
 <head>
-    <meta charset="utf-8">
-    <title>Таблица результатов</title>
-	<link rel="stylesheet" href="styles.css" type="text/css"/>
-	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" href="/static/styles.css" type="text/css"/>
+	<script type="text/javascript" src="/static/script.js"></script>
 </head>
+
 <body onload="makeStripy('sortable')">
 <h1 align="center"><b>Таблица результатов автопробега<p/></b></h1>
 <table class="sortable" border="1" cellpadding=5 cellspacing=1 align="center">
@@ -57,5 +63,4 @@
 <p/>
     <a href="https://www.dropbox.com/s/n8rkxagvrg8rx7z/Leg1-sorted-Elki2013.pdf" title="Ссылка на pdf-файл">
         <i>Оригинальная табличка</i></a>
-</body>
-</html>
+{% endblock main_content %}
